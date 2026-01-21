@@ -1,44 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Page</title>
-    <link rel="stylesheet" href="./index.css">
-</head>
-<body>
-    <header>
-        <h1>Sikdar Sadman Rahman</h1>
-        <p>As-salamu alaikum. Welcome to my personal page! I'm MERN stack developer.</p>
-    </header>
-    <main>
-        <h4>What I'm learning</h4>
-        <ul>
-            <li>How to develop a full stack website</li>
-            <li>How to deploy a website on internet</li>
-            <li>Building confidence as a web developer</li>
-        </ul>
-        <img src="./sadman profile.jpg" alt="sadman">
-        <form>
-            <fieldset>
-                <legend><h4>Contact Me</h4></legend>
-                <p>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name"/>
-                    
-                </p>
-                <p>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email">
-                </p>
-                <p>
-                    <label for="message">Message</label>
-                    <input type="textarea" id="message">
-                </p>
-                <button>Submit</button>
-            </fieldset>
-        </form>
-    </main>
-    <footer>Thank you for visiting my page</footer>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Page</title>
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <header>
+            <h1>Sikdar Sadman Rahman</h1>
+            <p>As-salamu alaikum. Welcome to my personal page! I'm MERN stack developer.</p>
+        </header>
+        <main>
+            <section id="about">
+                <img src="./sadman profile.jpg" alt="sadman's photo">
+            </section>
+            <section id="learning">
+                <h4>What I'm learning</h4>
+                <ul>
+                    <li>How to develop a full stack website</li>
+                    <li>How to deploy a website on internet</li>
+                    <li>Building confidence as a web developer</li>
+                </ul>
+            </section>
+            
+            <section id="contact_section">
+                <form>
+                    <fieldset>
+                        <legend><h4>Contact Me</h4></legend>
+                        <p>
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" id="name" required/>
+                            
+                        </p>
+                        <p>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </p>
+                        <p>
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" required></textarea>
+                        </p>
+                        <button type="submit">Submit</button>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        <footer>Thank you for visiting my page</footer>
+    </body>
 </html>
